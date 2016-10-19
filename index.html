@@ -236,6 +236,101 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/17/statistics/" itemprop="url">
+                  statistics
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-17T21:10:35+08:00" content="2016-10-17">
+              2016-10-17
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="MySql按周，按月，按日分组统计数据"><a href="#MySql按周，按月，按日分组统计数据" class="headerlink" title="MySql按周，按月，按日分组统计数据"></a>MySql按周，按月，按日分组统计数据</h2><h4 id="1、MySql按周，按月，按日分组统计数据"><a href="#1、MySql按周，按月，按日分组统计数据" class="headerlink" title="1、MySql按周，按月，按日分组统计数据"></a>1、MySql按周，按月，按日分组统计数据</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">select</span> <span class="keyword">DATE_FORMAT</span>(create_time,<span class="string">'%Y%u'</span>) weeks,<span class="keyword">count</span>(caseid) <span class="keyword">count</span> <span class="keyword">from</span> tc_case <span class="keyword">group</span> <span class="keyword">by</span> weeks;  </div><div class="line"><span class="keyword">select</span> <span class="keyword">DATE_FORMAT</span>(create_time,<span class="string">'%Y%m%d'</span>) <span class="keyword">days</span>,<span class="keyword">count</span>(caseid) <span class="keyword">count</span> <span class="keyword">from</span> tc_case <span class="keyword">group</span> <span class="keyword">by</span> <span class="keyword">days</span>;  </div><div class="line"><span class="keyword">select</span> <span class="keyword">DATE_FORMAT</span>(create_time,<span class="string">'%Y%m'</span>) <span class="keyword">months</span>,<span class="keyword">count</span>(caseid) <span class="keyword">count</span> <span class="keyword">from</span> tc_case <span class="keyword">group</span> <span class="keyword">by</span> <span class="keyword">months</span>;</div></pre></td></tr></table></figure>
+<p>2、如何处理按周统计</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/10/16/triggerHandler/" itemprop="url">
                   triggerHandler与triggle
                 </a>
@@ -455,7 +550,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -465,7 +560,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
